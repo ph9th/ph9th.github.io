@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thao Tran Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/98fd7ffeba.js" 
-    crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thao Tran Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/98fd7ffeba.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
     <div class="content">
         <nav id="navbar">
-            <a id="nav-name" class="name" href="#header">T H A O  &nbsp; T R A N</a>
+            <a id="nav-name" class="name" href="#header">T H A O &nbsp; T R A N</a>
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>                    <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact <i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li>
+                    <a href="#contact">Contact <i class="fa-solid fa-envelope"></i></a>
+                </li>
                 <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
             </ul>
             <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
         </nav>
         <div id="header">
             <div class="container">
-                
                 <div class="header-text">
                     <h1>Hey there &#128075;</h1>
-                    <p>My name is Thao. I am currently a student of Digital Media & Technology.</p>
+                    <p>
+                        My name is Thao. I am currently a student of Digital Media &
+                        Technology.
+                    </p>
                     <div class="social-icons">
                         <a href="https://www.behance.net/thao-tran"><i class="fa-brands fa-square-behance"></i></a>
                         <a href="https://github.com/ph9th"><i class="fa-brands fa-github"></i></a>
@@ -36,71 +41,85 @@
             </div>
         </div>
 
-    <!-- --------portfolio----------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Selected Projects</h1>
-            <h2>Development</h2>
-            <div class="work-list">
-                <div class="work">
-                    <img src="img/colormemo.png">
-                    <div class="layer">
-                        <h3>ColorMemo</h3>
-                        <p>A mobile game that aims to improve children's visual memory in combination with a tangible user interface.</p>
-                        <a href="https://github.com/ph9th/colormemo.git"><i class="fa-solid fa-link"></i></a>
+        <!-- --------portfolio----------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Selected Projects</h1>
+                <h2>Development</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/colormemo.png" />
+                        <div class="layer">
+                            <h3>ColorMemo</h3>
+                            <p>
+                                A mobile game that aims to improve children's visual memory in
+                                combination with a tangible user interface.
+                            </p>
+                            <a href="https://github.com/ph9th/colormemo.git"><i class="fa-solid fa-link"></i></a>
+                        </div>
                     </div>
+
+                    <div class="work">
+                        <img src="img/timer.png" />
+                        <div class="layer">
+                            <h3>Pomodoro Study Timer</h3>
+                            <p>
+                                A classic pomodoro timer with a task list to keep track of any
+                                to-dos.
+                            </p>
+
+                            <a href="https://ph9th.github.io/Pomodoro-Timer/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <p class="keywords">Unity, C#</p>
+                    <p class="keywords">HTML, CSS, JavaScript</p>
                 </div>
-                <div class="work">
-                    <img src="img/timer.png">
-                    <div class="layer">
-                        <h3>Pomodoro Study Timer</h3>
-                        <p>A classic pomodoro timer with a task list to keep track of any to-dos.</p>
-                        <a href="https://ph9th.github.io/Pomodoro-Timer/"><i class="fa-solid fa-link"></i></a>
+
+                <h2>Design</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/Stuck.jpg" />
+                        <div class="layer">
+                            <h3>Stuck</h3>
+                            <p>A short story 3D Animation.</p>
+                            <a href="https://www.behance.net/gallery/173835123/Stuck-3D-Animation"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/mtower.jpg" />
+                        <div class="layer">
+                            <h3>M-Tower Anniversary</h3>
+                            <p>
+                                A short animation advertising a fictive 50th anniversary for
+                                an M-Tower.
+                            </p>
+                            <a href="https://www.behance.net/gallery/175401031/Animation-Clip"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <p class="keywords">Autodesk Maya</p>
+                    <p class="keywords">Adobe After Effects</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------contact--------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact</h1>
+
+                        <p id="mail">
+                            <i class="fa-solid fa-paper-plane"></i><a
+                                href="mailto: phtranthao@gmail.com">phtranthao@gmail.com</a>
+                        </p>
                     </div>
                 </div>
             </div>
-            <!-- <a href="#" class="btn">See more</a> -->
-
-            <h2>Design</h2>
-            <div class="work-list">
-                <div class="work">
-                    <img src="img/Stuck.jpg">
-                    <div class="layer">
-                        <h3>Stuck</h3>
-                        <p>A short story 3D Animation created with Autodesk Maya.</p>
-                        <a href="https://www.behance.net/gallery/173835123/Stuck-3D-Animation"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="img/mtower.jpg">
-                    <div class="layer">
-                        <h3>M-Tower Anniversary</h3>
-                        <p>A short animation created with Adobe After Effects advertising a fictive 50th anniversary for an M-Tower.</p>
-                        <a href="https://www.behance.net/gallery/175401031/Animation-Clip"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- <a href="#" class="btn">See more</a> -->
-
         </div>
     </div>
-
-    <!-- ------contact--------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact</h1>
-                    
-                    <p id="mail"><i class="fa-solid fa-paper-plane"></i><a href = "mailto: phtranthao@gmail.com">phtranthao@gmail.com</a></p>
-                    
-                
-                </div>
-            
-            </div>
-        </div>
-    </div>
-</div>
 </body>
-</html>
 
+</html>
