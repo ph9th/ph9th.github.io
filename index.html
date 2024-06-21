@@ -8,19 +8,23 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://kit.fontawesome.com/98fd7ffeba.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content">
+    <header>
         <nav id="navbar">
             <a id="nav-name" class="name" href="#header">T H A O &nbsp; T R A N</a>
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#portfolio">Projects</a></li>
-                <li>
+                <!-- <li>
                     <a href="#contact">Contact <i class="fa-solid fa-envelope"></i></a>
-                </li>
+                </li> -->
                 <!-- <i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
             </ul>
             <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
@@ -28,18 +32,17 @@
         <div id="header">
             <div class="container">
                 <div class="header-text">
-                    <h1>Hey there &#128075;</h1>
+                    <h1>Hi, I'm Thảo.</h1>
                     <p>
-                        My name is Thao. I am currently a student of Digital Media &
-                        Technology.
+                        I study Digital Media & Technology, and I enjoy <br> working at the intersection of design and coding <br> to create seamless user experiences.
                     </p>
-                    <div class="social-icons">
-                        <a href="https://www.behance.net/thao-tran"><i class="fa-brands fa-square-behance"></i></a>
-                        <a href="https://github.com/ph9th"><i class="fa-brands fa-github"></i></a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
+    </header>
+    <div class="content">
+        
 
         <!-- --------portfolio----------- -->
         <div id="portfolio">
@@ -48,16 +51,22 @@
                 <h2>Development</h2>
                 <div class="work-list">
                     <div class="work">
-                        <img src="img/colormemo.png" />
-                        <div class="layer">
-                            <h3>ColorMemo</h3>
-                            <p>
-                                A mobile game that aims to improve children's visual memory in
-                                combination with a tangible user interface.
-                            </p>
-                            <a href="https://github.com/ph9th/colormemo.git"><i class="fa-solid fa-link"></i></a>
-                        </div>
+                        <img src="img/colormemo.png" />   
+                    </div>      
+                    <div class="work-description">
+                        <h3>ColorMemo</h3>
+                        <p>
+                            A mobile game that aims to improve children's visual memory in
+                            combination with a tangible user interface.
+                        </p>
+                        <ul class="keywords">
+                            <li>Unity</li>
+                            <li>C#</li>
+                        </ul>
+                        <a href="https://github.com/ph9th/colormemo.git"><i class="fa-solid fa-link"></i></a>
                     </div>
+                    
+                    
 
                     <div class="work">
                         <img src="img/timer.png" />
@@ -71,7 +80,7 @@
                             <a href="https://ph9th.github.io/Pomodoro-Timer/"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
-                    <p class="keywords">Unity, C#</p>
+                    
                     <p class="keywords">HTML, CSS, JavaScript</p>
                 </div>
 
@@ -104,12 +113,13 @@
             </div>
         </div>
 
-        <!-- ------contact--------- -->
+        <footer>
+                    <!-- ------contact--------- -->
         <div id="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="sub-title">Contact</h1>
+                        <h1 class="sub-title">Get in touch</h1>
 
                         <p id="mail">
                             <i class="fa-solid fa-paper-plane"></i><a
@@ -119,6 +129,14 @@
                 </div>
             </div>
         </div>
+            <div class="social-icons">
+                <a href="https://www.behance.net/thao-tran"><i class="fa-brands fa-square-behance"></i></a>
+                <a href="https://github.com/ph9th"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+        </footer>
+
+
     </div>
 </body>
 
