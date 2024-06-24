@@ -1,21 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // When the event DOMContentLoaded occurs, it is safe to access the DOM
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('projects.json')
+      .then(response => response.json())
+      .then(projects => {
+          const projectsContainer = document.getElementById('projects');
+          projects.forEach(project => {
+              const projectElement = document.createElement('div');
+              projectElement.classList.add('project');
 
-  const navPos = navbar.getBoundingClientRect().top
-  const headerDiv = document.getElementById('header')
-  const headerPos = headerDiv.offsetTop
-
-  window.addEventListener('scroll', e => {
-    const scrollPos = window.scrollY
-    if (scrollPos > navPos) {
-      navbar.classList.add('sticky')
-    } else {
-      navbar.classList.remove('sticky')
-    }
-    if (scrollPos > headerPos) {
-      navbar.classList.add('sticky-bg')
-    } else {
-      navbar.classList.remove('sticky-bg')
-    }
-  })
-})
+              projectElement.innerHTML = `
+                  <div class="project-img">
+                  <a href="${project.link}"><img src="${project.image}" /></a>
+                  <div class="overlay"></div>
+                  </div>
+                  <div class="project-description">
+                      <h3>${project.title}</h3>
+                      <p>${project.description}</p>
+                      <ul class="keywords">
+                          ${project.keywords.map(keyword => `<li>${keyword}</li>`).join('')}
+                      </ul>
+                      
+                  </div>
+              `;
+              projectsContainer.appendChild(projectElement);
+          });
+      })
+      .catch(error => console.error('Error fetching the projects:', error));
+});

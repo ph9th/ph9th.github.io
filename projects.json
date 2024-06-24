@@ -1,0 +1,37 @@
+[
+    {
+        "title": "ColorMemo",
+        "image": "img/colormemo.png",
+        "description": "A mobile game that aims to improve children's visual memory in combination with a tangible user interface.",
+        "keywords": [ "Game Design", "Unity", "C#"],
+        "link": "https://github.com/ph9th/colormemo.git"
+    },
+    {
+        "title": "Witching Senses",
+        "image": "img/witching-senses.png",
+        "description": "A 2D adventure game where players solve puzzles to win a tournament.",
+        "keywords": ["Game Design", "Unity", "C#"],
+        "link": "https://thaophu.itch.io/witching-senses"
+    },
+    {
+        "title": "Stuck",
+        "image": "img/Stuck.jpg",
+        "description": "A short story 3D Animation.",
+        "keywords": ["Animation", "Autodesk Maya"],
+        "link": "https://www.behance.net/gallery/173835123/Stuck-3D-Animation"
+    },
+    {
+        "title": "M-Tower Anniversary",
+        "image": "img/mtower.jpg",
+        "description": "A short animation advertising a fictive 50th anniversary for an M-Tower.",
+        "keywords": ["Adobe After Effects"],
+        "link": "https://www.behance.net/gallery/175401031/Animation-Clip"
+    },
+    {
+        "title": "Pomodoro Study Timer",
+        "image": "img/timer.png",
+        "description": "A classic pomodoro timer with a task list to keep track of any to-dos.",
+        "keywords": ["HTML", "CSS", "JavaScript"],
+        "link": "https://ph9th.github.io/Pomodoro-Timer/"
+    }
+]
