@@ -71,16 +71,16 @@ a{
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+
 }
 
 body {
   background: var(--secondary-color);
   color: var(--primary-color);
   line-height: 1.4em;
-  overflow: hidden;
 
 }
+
 
 .content {
   padding-top: 2vh;
@@ -93,6 +93,7 @@ h1{
   font-weight: 400;
   font-size: 4em;
   color: var(--accent-color);
+  margin-bottom: 50px;
 }
 
 p{
@@ -100,16 +101,14 @@ p{
 } 
 
 .wrapper {
-
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-  height: 100vh;
+height: 100vh;
 }
 
 /* .scroller {
   scroll-snap-type: y mandatory;
-  height: 100vh;
   scroll-padding: 30px;
 } */
 
@@ -118,23 +117,13 @@ header, .container {
   scroll-snap-align: start;
 }
 
-header{
+header, main{
   width: 100%;
-  background-size: cover;
-  background-position: center;
   position: relative;
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
-  height: 100%;
   transform-style: preserve-3d;
   z-index: -1;
+  /* overflow: hidden; */
 }
-
-.layer2 {
-  transform: translateZ(-2px) scale(3);
-}
-
 
 .background{
   position: absolute;
@@ -145,13 +134,17 @@ header{
   transform: translateZ(-10px);
 }
 
+/* .layer2 {
+  transform: translateZ(-100px) translateY(400px);
+} */
+
+/* Nav */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   position: sticky;
-  z-index: 2;
   background: transparent;
   padding: 0 6vh;
   color: var(--accent-color);
@@ -198,13 +191,39 @@ nav ul li a:hover::after {
   margin-top: 12%;
 }
 
-h1 {
-  margin-bottom: 50px;
-}
-
 .header-text p {
   font-size: 1.1rem;
 }
+
+/* ------- main ------- */
+
+main .background {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(-10px);
+  stroke: var(--accent-color);
+  opacity: 0.2;
+}
+
+main .layer1 {
+  transform: translateX(-70vw) translateY(-80vh) translateZ(-5px) rotate(-30deg) scale(0.2);
+} 
+
+main .layer2 {
+  transform: translateX(-200vw) translateY(20vh) translateZ(-5px) rotate(-30deg) scale(0.2);
+}
+
+main .layer3 {
+  transform: translateX(-10vw) translateY(90vh) translateZ(-5px) rotate(90deg) scale(0.2);
+}
+
+main .layer4 {
+  transform: translateX(-200vw) translateY(0vh) translateZ(-5px) rotate(-30deg) scale(0.2);
+}
+
 
 /* --------portfolio--------- */
 
@@ -215,12 +234,13 @@ h2 {
 
 #portfolio {
   padding: 50px 0;
-  position: relative;
+  
   margin-top: 10vh;
   display: block;
   width: 100%;
-  height: 100%;
+
 }
+
 
 
 #portfolio h1 {
@@ -335,12 +355,13 @@ h2 {
 /* FOOTER */
 
 #contact {
-  height: auto; /* Allow contact section to expand as needed */
+  height: auto;
   padding: 2vh 6vh;
 }
 
 footer {
   width: 100%;
+  position: relative;
 }
 
 
@@ -403,7 +424,6 @@ nav .fa-solid {
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 2;
     transition: right 0.5s;
   }
 
