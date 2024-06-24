@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
               projectElement.innerHTML = `
                   <div class="project-img">
                   <a href="${project.link}"><img src="${project.image}" /></a>
-                  <div class="overlay"></div>
+                 
                   </div>
                   <div class="project-description">
                       <h3>${project.title}</h3>
