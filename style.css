@@ -48,51 +48,46 @@ table {
 
 /* CUSTOM STYLES */
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+
+body {
+  scroll-behavior: smooth;
+  line-height: 1.4;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+}
+
 :root {
-  --off-white: #F8FCFF;
-  --blue: #0f3351;
-  --white: #ffffff;
-  --midblue: rgba(17, 116, 226, 1);
-  --sand: rgba(247, 230, 183, 1);
-  --cucumber: linear-gradient(25deg, #ffe38f, #e6ffe6, #eef8ff, #b1dcfb);
   --primary-color: #081F5C; /* Deep Blue */
   --secondary-color: #F7F2EB; /* Light Beige */
   --accent-color: #2242b3; /* Soft Blue */
+  --blue: #0f3351;
+  --beige: #e3dbd1;
 }
 
-* {
-  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
-  box-sizing: border-box;
-}
+/* Basic Styles */
 
 a{
   text-decoration: none;
 }
 
-html {
-  scroll-behavior: smooth;
-
-}
-
-body {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-  line-height: 1.4em;
-}
-
-
-.content {
-  padding-top: 2vh;
-  padding-bottom: 10vh;
-}
-
-h1{
-  font-family: "Gluten", cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 4em;
+h1 {
+  font-size: 2.6rem;
   color: var(--accent-color);
-  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 1.62rem;
 }
 
 p{
@@ -103,14 +98,21 @@ p{
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-height: 100vh;
-scroll-behavior: smooth;
+  height: 100vh;
+  scroll-behavior: smooth;
 }
 
-/* .scroller {
-  scroll-snap-type: y mandatory;
-  scroll-padding: 30px;
-} */
+.content {
+  padding-top: 2vh;
+  padding-bottom: 10vh;
+}
+
+header h1 {
+
+  font-family: "Sriracha", cursive;
+  font-size: 4.236rem;
+  margin-bottom: 50px;
+}
 
 header, .container {
   padding: 2vh 6vh;
@@ -122,7 +124,6 @@ header, main{
   position: relative;
   transform-style: preserve-3d;
   z-index: -1;
-  /* overflow: hidden; */
 }
 
 .background{
@@ -140,6 +141,7 @@ header, main{
 
 /* Nav */
 nav {
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -152,6 +154,7 @@ nav {
 }
 
 .name {
+  font-family: "Sriracha", cursive;
   text-decoration: none;
   color: inherit;
   font-size: 1rem;
@@ -162,6 +165,7 @@ nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
+  
 }
 
 nav ul li a {
@@ -232,10 +236,7 @@ main .layer4 {
 
 /* --------portfolio--------- */
 
-h2 {
-  margin-top: 30px;
-  font-size: 18px;
-}
+
 
 #portfolio {
   padding: 50px 0;
@@ -243,17 +244,7 @@ h2 {
   margin-top: 10vh;
   display: block;
   width: 100%;
-
 }
-
-
-
-#portfolio h1 {
-  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
-  /* font-weight: bold; */
-  font-size: 2rem;
-}
-
 
 #projects{
   display: flex;
@@ -393,7 +384,6 @@ footer h1{
 
 .social-icons a:hover {
   color: var(--accent-color);
-  transform: translateY(-5px);
 }
 
 .btn.btn2 {
@@ -446,7 +436,5 @@ nav .fa-solid {
 
   .sub-title {
     font-size: 25px;
-
-
   }
 }
