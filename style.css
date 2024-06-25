@@ -78,7 +78,6 @@ body {
   background: var(--secondary-color);
   color: var(--primary-color);
   line-height: 1.4em;
-
 }
 
 
@@ -105,6 +104,7 @@ p{
   overflow-x: hidden;
   perspective: 10px;
 height: 100vh;
+scroll-behavior: smooth;
 }
 
 /* .scroller {
@@ -200,24 +200,29 @@ nav ul li a:hover::after {
 main .background {
   position: absolute;
   height: 100%;
-  width: auto;
+  width: 100%;
   object-fit: cover;
   z-index: -1;
   transform: translateZ(-10px);
-  stroke: var(--accent-color);
   opacity: 0.2;
 }
 
 main .layer1 {
-  transform: translateX(-70vw) translateY(-80vh) translateZ(-5px) rotate(-30deg) scale(0.2);
+  right: 20vw;
+  transform: translateX(75vw) translateY(-80vh) translateZ(-5px) rotate(-30deg) scale(0.5);
 } 
 
+.main .layer1 .cls-1 {
+  stroke-width: 20px;
+}
+
 main .layer2 {
-  transform: translateX(-200vw) translateY(20vh) translateZ(-5px) rotate(-30deg) scale(0.2);
+  transform: translateX(-50vw) translateY(20vh) translateZ(-5px) rotate(-30deg) scale(0.5);
 }
 
 main .layer3 {
-  transform: translateX(-10vw) translateY(90vh) translateZ(-5px) rotate(90deg) scale(0.2);
+  right: 20vw;
+  transform: translateX(75vw) translateY(90vh) translateZ(-5px) rotate(90deg) scale(0.5);
 }
 
 main .layer4 {

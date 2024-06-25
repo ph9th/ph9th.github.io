@@ -2,27 +2,27 @@
 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 302.3">
   <defs>
     <style>
-      .cls-1 {
+      .cls-3 {
         stroke-miterlimit: 15.12;
       }
 
-      .cls-1, .cls-2 {
+      .cls-3, .cls-4 {
         fill: none;
         stroke: #000;
         stroke-linecap: round;
         stroke-width: 30px;
       }
 
-      .cls-2 {
+      .cls-4 {
         stroke-linejoin: round;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
     <g>
-      <path id="path1001" class="cls-2" d="M165,51.15L15,151.15l150,100"/>
-      <path id="path6202" class="cls-1" d="M270,15l-40,272.3"/>
-      <path id="path14882" class="cls-2" d="M335,51.15l150,100-150,100"/>
+      <path id="path1001" class="cls-4" d="M165,51.15L15,151.15l150,100"/>
+      <path id="path6202" class="cls-3" d="M270,15l-40,272.3"/>
+      <path id="path14882" class="cls-4" d="M335,51.15l150,100-150,100"/>
     </g>
   </g>
 </svg>

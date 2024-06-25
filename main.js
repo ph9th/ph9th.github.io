@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(response => response.json())
       .then(projects => {
           const projectsContainer = document.getElementById('projects');
-          projects.forEach(project => {
+          const firstFourProjects = projects.slice(0, 4);
+          firstFourProjects.forEach(project => {
               const projectElement = document.createElement('div');
               projectElement.classList.add('project');
 
