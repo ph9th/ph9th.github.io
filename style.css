@@ -107,6 +107,13 @@ html, body {
   --accent-color: #2242b3; /* Soft Blue */
   --blue: #0f3351;
   --beige: #e3dbd1;
+  --gradient-color-1: #6F96D1;
+  --gradient-color-2: #a3c8e4 ;
+  --gradient-color-3: #EDF0F5 ;
+  --gradient-color-4: #F2F1DF ;
+  
+  
+  
 }
 
 [data-theme="dark"] {
@@ -115,7 +122,45 @@ html, body {
   --accent-color: #D0E4FF ; /* Soft Blue */ 
   --blue: #0f3351;
   --beige: #e3dbd1;
+  --midnight: #091F5B;
+  --gradient-color-1: #0a2367;
+  --gradient-color-2: #2645b3 ;
+  --gradient-color-3: #6F96D1 ;
+  --gradient-color-4: #F2F1DF ;
 }
+
+
+#circle {
+  position: absolute;
+  z-index: -2;
+  opacity: 0.4;
+  width: 350px;
+  height: 350px; 
+  filter: blur(30px);
+  animation: morph 10s infinite; 
+  background: linear-gradient(
+      47deg,
+      var(--gradient-color-1)  19%,
+      var(--gradient-color-2)  47%,
+      var(--gradient-color-3)  76%,
+      var(--gradient-color-4)  100%
+  );
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+  }
+  33% {
+    border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+  }
+  66% {
+    border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+  }
+  100% {
+    border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+  }
+} 
 
 /* Basic Styles */
 

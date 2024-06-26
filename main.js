@@ -39,7 +39,76 @@ document.addEventListener('DOMContentLoaded', function() {
 
       loopGreetings();
 
+      const container = document.getElementById('header');
+      const circle = document.getElementById('circle');
+
+      const containerRect = container.getBoundingClientRect();
+
+      const circleRadius = circle.offsetWidth / 2;
+
+      let x = Math.random() * (containerRect.width - circleRadius * 2);
+      let y = Math.random() * (containerRect.height - circleRadius * 2);
+      let dx = 1; 
+      let dy = 1; 
+      let targetX = x;
+      let targetY = y; 
+      let isFollowingCursor = false; 
+
+
+      circle.style.left = `${x}px`;
+      circle.style.top = `${y}px`;
+
+
+      function moveCircle() {
+          // Check if the circle should follow the cursor
+          if (isFollowingCursor) {
+
+              const distX = targetX - x;
+              const distY = targetY - y;
+              const distance = Math.sqrt(distX * distX + distY * distY);
+
+              console.log(distance);
+              
+              if (distance < 100) {
+                  isFollowingCursor = false;
+              } else {
+
+                  const speed = 1;
+                  dx = (distX / distance) * speed;
+                  dy = (distY / distance) * speed;
+              }
+          }
+
+          x += dx;
+          y += dy;
+
+          if (x + circleRadius >= containerRect.width || x <= -circleRadius) {
+              dx = -dx;
+          }
+
+          if (y + circleRadius >= containerRect.height || y <= -circleRadius) {
+              dy = -dy;
+          }
+
+          circle.style.left = `${x}px`;
+          circle.style.top = `${y}px`;
+
+          requestAnimationFrame(moveCircle);
+      }
+
+    container.addEventListener('mousemove', (event) => {
+        const mouseX = event.clientX - containerRect.left - circleRadius;
+        const mouseY = event.clientY - containerRect.top - circleRadius; 
+        targetX = mouseX;
+        targetY = mouseY;
+        isFollowingCursor = true;
+    });
+
+     
+      moveCircle();
+
   });
+
   //Load navigation bar and add event listener for theme toggle
   $("#navbar").load("navbar.html", function () {
     const themeToggleBtn = document.querySelector("[data-theme-toggle]");
@@ -66,6 +135,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
       
 
+
 });
+
+
 
 
