@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
   fetch('projects.json')
     .then(response => response.json())
     .then(projects => {
-      const firstFourProjects = projects.slice(0, 4);
+      const firstFourProjects = projects.slice(0, 3);
       displayProjects(firstFourProjects, 'projects'); 
     })
     .catch(error => console.error('Error fetching the projects:', error));
