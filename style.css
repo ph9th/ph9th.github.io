@@ -465,6 +465,7 @@ main .layer4 {
   overflow: hidden;
 } 
 
+
 .project-img img {
   transition: transform 0.5s ease;
   object-fit: cover;
@@ -566,7 +567,7 @@ footer h2{
 
 .social-icons a {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
   color: var(--primary-color);
 }
@@ -585,44 +586,84 @@ footer h2{
   color: var(--blue);
 }
 
-/* ------------css for small screens ---------- */
-
 nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .header-text {
-    font-size: 16px;
+/* ------------css for small screens ---------- */
+
+@media only screen and (max-width: 1200px) {
+
+  main .layer1 {
+    transform: translateX(75vw) translateY(-60vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+}
+
+  main .layer2 {
+    transform: translateX(-50vw) translateY(-10vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+}
+
+main .layer3 {
+  transform: translateX(75vw) translateY(50vh) translateZ(-5px) rotate(90deg) scale(0.5);
+}
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .project{
+    display: flex;
+    flex-direction: column;
   }
 
-  .header-text h1 {
-    font-size: 30px;
+  .project-img{
+    width: 70vw;
   }
 
-  nav ul {
-    background: var(--blue);
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    transition: right 0.5s;
+  main .layer1{
+
   }
 
-  nav ul li {
-    display: block;
-    margin: 25px;
+  main .layer2 {
+    transform: translateX(-50vw) translateY(-30vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+}
+
+  main .layer3{
+
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header-text h1{
+    font-size: 3em;
   }
 
-  nav ul .fa-solid {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
+  .switch{
+    display: none;
   }
 
-  .sub-title {
-    font-size: 25px;
+  h1{
+    font-size: 2em;
   }
+
+  #portfolio{
+    margin-top: 2vh;
+  }
+
+  .container{
+    padding: 0 10vw;
+  }
+  
+  .social-icons a{
+    font-size: 2em;
+    padding: 0 1vw;
+  }
+
+  #navbar {
+    padding: 1em 3vw;
+    justify-content: center;
+  }
+
+  .name {
+    display: none;
+  }
+
 }
