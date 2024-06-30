@@ -666,4 +666,8 @@ main .layer3 {
     display: none;
   }
 
+  #circle{
+    display: none;
+  }
+
 }
