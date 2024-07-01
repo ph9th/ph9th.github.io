@@ -67,7 +67,6 @@ body {
 }
 
 .cursor{
-  
   position: absolute;
   pointer-events: none;
   width: 36px;
@@ -202,7 +201,8 @@ p{
 /* Header */
 
 header h1 {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
+  font-weight: bold;
   font-size: 4.236rem;
   margin-bottom: 50px;
   text-transform: capitalize;
