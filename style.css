@@ -473,27 +473,8 @@ main .layer4 {
   height: 100%;
 }
 
-.project-img::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-color);
-  mix-blend-mode: color;
-  opacity: 0.3;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
-}
-
-.project-img:hover::before {
-  transition: opacity 0.5s ease;
-  opacity: 0;
-}
-
 .project-img:hover img {
-  transform: scale(1.1);
+  filter: contrast(70%); 
 }
 
 .project-description h3 {

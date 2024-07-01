@@ -15,4 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       displayProjects(projects, 'all-projects');
     })
     .catch(error => console.error('Error fetching the projects:', error));
+
+    //Load footer
+  $("#footer").load("footer.html");
 });
