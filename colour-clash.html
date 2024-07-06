@@ -16,11 +16,68 @@
 </head>
 <body>
     <div class="cursor circle"></div>
-    <div class="wrapper">
+    <div class="wrapper project-page">
     <nav id="navbar">
 
     </nav>
     <main>
+    <div class="container">
+    <h1>Colour Clash</h1>
+    <section>
+        <h2>Overview</h2>
+        <p>
+            As part of a group project for my "Prototyping Physical Interaction" course, we developed a 2-player color reaction game. The game is designed to be competitive yet fun and simple, targeting players of all ages. The goal was to create an engaging party game that also helps improve players' reaction times over repeated play sessions.
+        </p>
+    </section>
+    <section>
+        <h2>My Role: </h2>
+        <p>In this project, I was primarily responsible for documentation and user research. This involved gathering and analyzing user feedback to inform the iterative development process and ensure a user-centered design.</p> 
+    </section>
+       
+    <section>
+        <h2>User Research and Insights:</h2>
+        <p>
+            I conducted comprehensive user research through playtesting sessions and documented the following key insights:
+            <ul>
+                <li><b>Color Distinction Issues:</b> Users found it challenging to differentiate between cyan and blue on the keypads.</li>
+                <li><b>Terminology Confusion:</b> Some users were unfamiliar with the term "magenta" and suggested renaming it to "purple."</li>
+                <li><b>Ergonomic Preferences:</b> Feedback indicated a preference for holding the keypads separately rather than having them fixed on the board.</li>
+                <li><b>Screen Size Concerns:</b> Several users felt the LCD display was too small.</li>
+                <li><b>Game Balance:</b> The existing point deduction system created a negative feedback loop for losing players. Users suggested introducing a streak system to balance the gameplay.</li>
+                <li><b>Sound Feedback:</b> The sounds for correct and incorrect inputs were indistinguishable and perceived as distracting.</li>
+            </ul>
+        </p>
+    </section>
+    <section>
+        <h2>Implemented Changes</h2>
+        <p>
+            Based on the user feedback, our team made several iterations to improve the game:
+            <ul>
+                <li><b>Display Pattern Standardization:</b> We standardized the Neotrellis board display to ensure a fair distribution of colors for both players.</li>
+                <li><b>Keypad Design:</b> Redesigned keypads to be held separately in each hand, enhancing user comfort and versatility.</li>
+                <li><b>Color Adjustments:</b> Changed cyan to orange for better visibility and renamed "magenta" to "purple."</li>
+                <li><b>Combo System:</b> Implemented a combo streak system that rewards consecutive correct answers, making the game more balanced and competitive.</li>
+                <li><b>Sound Feedback:</b> Modified buzzer sounds to clearly differentiate between correct and incorrect inputs.</li>
+            </ul>
+        </p>
+    </section>
+       <section>
+        <h2>Final Outcome and Further Improvements</h2>
+            <p>
+                The final prototype incorporated these changes, resulting in a more engaging and user-friendly game. Key features included:
+                <ul>
+                    <li><b>Neotrellis Boards:</b> Attached to 3D casings with hidden wires, power supply, and buzzer.</li>
+                    <li><b>LCD Screen:</b> Centrally placed to display scores and colors.</li>
+                    <li><b>Ergonomic Keypads:</b> Players can hold the color boards, enabling two-handed play.</li>
+                    <li><b>Distinctive Colors:</b> Seven easily distinguishable colors (red, green, orange, yellow, purple, blue, white) were used.</li>
+                    <li><b>Enhanced Sound Feedback:</b> Clear audio signals for correct and incorrect inputs.</li>
+                </ul>
+                <br>
+                Despite these improvements, further enhancements could be made based on additional user feedback, such as increasing the size of the LCD screen or implementing dual screens for each player.
+                </p>
+       </section>
+    </div>
+
 
 
     </main>
@@ -31,6 +88,7 @@
     </footer>
 </div>
 <script src="cursor.js"></script>
+<script src="color-clash.js"></script>
 <script src="util.js"></script>
 </body>
 </html>

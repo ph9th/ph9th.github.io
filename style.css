@@ -195,9 +195,6 @@ p{
   padding-bottom: 10vh;
 }
 
-
-
-
 /* Header */
 
 header h1 {
@@ -570,6 +567,30 @@ footer h2{
 nav .fa-solid {
   display: none;
 }
+
+/* Project page */
+
+.project-page .container {
+  padding: 0 20vw;
+}
+
+.project-page h1 {
+ margin-bottom: 1em;
+}
+
+.project-page h2 {
+  margin-bottom: 0.em;
+ }
+
+ .project-page section {
+  margin-bottom: 2em;
+ }
+
+
+
+
+
+
 
 /* ------------css for small screens ---------- */
 
