@@ -53,6 +53,10 @@ table {
   cursor: none !important;
 }
 
+html, body {
+  overflow: hidden;
+}
+
 html {
   font-size: 16px;
 }
@@ -86,7 +90,7 @@ body {
 }
 
 .hide-cursor {
-  cursor: none;
+  cursor: none !important;;
 }
 
 html, body {
@@ -571,8 +575,15 @@ nav .fa-solid {
 /* Project page */
 
 .project-page .container {
-  padding: 0 20vw;
+  padding: 2em 20vw;
 }
+
+
+.project-page .header-img img {
+  width: 100%;
+  height: auto;
+}
+
 
 .project-page h1 {
  margin-bottom: 1em;

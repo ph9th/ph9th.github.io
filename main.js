@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //Load footer
   $("#footer").load("footer.html");
 
-  //Load first 4 projects
+  //Load first 3 projects
   fetch('projects.json')
     .then(response => response.json())
     .then(projects => {
@@ -130,10 +130,6 @@ document.addEventListener('DOMContentLoaded', function() {
       displayProjects(firstFourProjects, 'projects'); 
     })
     .catch(error => console.error('Error fetching the projects:', error));
-
-      
-
-      
 
 
 });
