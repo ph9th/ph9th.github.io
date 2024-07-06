@@ -11,5 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
       //Load footer
     $("#footer").load("footer.html");
-  });
+
+
+//     projectElement.classList.add('fade-in');
+//   });
   
