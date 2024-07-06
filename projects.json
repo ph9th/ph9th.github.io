@@ -15,8 +15,8 @@
     },
     {
         "title": "Colour Clash",
-        "image": "img/.png",
-        "description": "A 2-player color reaction game using an Arduino. Developed with fellow students.",
+        "image": "img/colour-clash-mockup.png",
+        "description": "A 2-player color reaction game using an Arduino. Designed and developed in collaboration with fellow students.",
         "keywords": ["Prototyping", "Interaction Design", "User Experience"],
         "link": "./colour-clash.html"
     },
