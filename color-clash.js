@@ -14,5 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //     projectElement.classList.add('fade-in');
-//   });
+//  
+});
   
