@@ -7,18 +7,18 @@
         "link": "./online-grocery.html"
     },
     {
-        "title": "Witching Senses",
-        "image": "img/witching-senses-mockup.png",
-        "description": "A 2D adventure game where players solve puzzles to win a tournament. Designed and developed in collaboration with fellow students.",
-        "keywords": ["Game Design", "Unity", "C#"],
-        "link": "https://thaophu.itch.io/witching-senses"
-    },
-    {
         "title": "Colour Clash",
         "image": "img/colour-clash-mockup.png",
         "description": "A 2-player color reaction game using an Arduino. Designed and developed in collaboration with fellow students.",
         "keywords": ["Prototyping", "Interaction Design", "User Experience"],
         "link": "./colour-clash.html"
+    },
+    {
+        "title": "Witching Senses",
+        "image": "img/witching-senses-mockup.png",
+        "description": "A 2D adventure game where players solve puzzles to win a tournament. Designed and developed in collaboration with fellow students.",
+        "keywords": ["Game Design", "Unity", "C#"],
+        "link": "https://thaophu.itch.io/witching-senses"
     },
     {
         "title": "Pomodoro Study Timer",
