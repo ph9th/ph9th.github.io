@@ -631,7 +631,7 @@ nav .fa-solid {
  }
 
  .project-page section {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
  }
 
  .project-page .key-features ul>li>ul>li{
@@ -646,6 +646,25 @@ nav .fa-solid {
 
  .project-page ul{
   margin-bottom: 1em;
+ }
+
+ .overview div>a, .overview div>a:visited {
+  color: var(--primary-color);
+
+  border: 2px solid var(--primary-color);
+  padding: 0.8em 1.3em;
+  border-radius: 10px;
+
+ }
+
+ .overview div>a:hover {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+
+ }
+
+ .overview div{
+  margin-top: 2em;
  }
 
 
