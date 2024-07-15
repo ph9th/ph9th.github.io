@@ -76,11 +76,11 @@ body {
   pointer-events: none;
   width: 36px;
   height: 36px;
-  background-color: var(--accent-color );
+  background-color: var(--primary-color );
   border-radius: 50%;
   z-index: 10;
   opacity: 0.4;
-  mix-blend-mode: difference;
+  mix-blend-mode: var(--blend-mode);
 }
 
 .triangle {
@@ -116,7 +116,7 @@ html, body {
   --gradient-color-2: #a3c8e4 ;
   --gradient-color-3: #EDF0F5 ;
   --gradient-color-4: #F2F1DF ;
-  
+  --blend-mode: multiply;
   
   
 }
@@ -132,6 +132,7 @@ html, body {
   --gradient-color-2: #2645b3 ;
   --gradient-color-3: #6F96D1 ;
   --gradient-color-4: #F2F1DF ;
+  --blend-mode: difference;
 }
 
 
@@ -585,9 +586,7 @@ nav .fa-solid {
 /* background-color: var(--primary-color); */
 }
 
-.project-page .header-img img{
-  width: 100%;
-  }
+
 
 .project-page .container {
   width: 100%;
@@ -596,15 +595,22 @@ nav .fa-solid {
   background-color: var(--secondary-color);
 }
 
+.project-page .header-img img{
+  width: 100%;
+  object-fit: cover;
+  }
+
+
 .parallax-container {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   background-image: url('./img/lemimart/header.png');
+  width: 100%;
   min-height: 80vh;
   min-width: 500px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   margin: 1.5em 0;
@@ -627,6 +633,15 @@ nav .fa-solid {
   height: auto;
 } */
 
+
+.progress-bar {
+  background: #ff4163;
+  height: 10px;
+  width: 10%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 
 .project-page h1 {
  margin-bottom: 1em;
@@ -842,3 +857,5 @@ main .layer3 {
   }
 
 }
+
+

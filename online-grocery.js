@@ -6,10 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
           console.error('Theme toggle button not found');
         }
+        
       });
     
         //Load footer
       $("#footer").load("footer.html");
+
+
 
     var container = document.querySelector('.mockupContainer');
     var mockupImg = document.getElementById('mockupImg');
@@ -38,4 +41,20 @@ document.addEventListener('DOMContentLoaded', function () {
         void mockupImg.offsetHeight;  
         mockupImg.classList.add('visible');
     }
+
+   
 });
+
+document.addEventListener("scroll", (event) => {
+    console.log(window.scrollY);
+    lastKnownScrollPosition = window.scrollY;
+  
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        doSomething(lastKnownScrollPosition);
+        ticking = false;
+      });
+  
+      ticking = true;
+    }
+  });
