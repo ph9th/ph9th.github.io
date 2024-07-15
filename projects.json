@@ -1,5 +1,12 @@
 [
     {
+        "title": "Online Grocery Store",
+        "image": "img/lemimart.png",
+        "description": "An online grocery store with HTML, CSS, and JavaScript for the frontend, and PHP for backend database management.",
+        "keywords": ["Web development", "UI Design"],
+        "link": "./online-grocery.html"
+    },
+    {
         "title": "Witching Senses",
         "image": "img/witching-senses-mockup.png",
         "description": "A 2D adventure game where players solve puzzles to win a tournament. Designed and developed in collaboration with fellow students.",
@@ -12,13 +19,6 @@
         "description": "A 2-player color reaction game using an Arduino. Designed and developed in collaboration with fellow students.",
         "keywords": ["Prototyping", "Interaction Design", "User Experience"],
         "link": "./colour-clash.html"
-    },
-    {
-        "title": "Online Grocery Store",
-        "image": "img/lemimart.png",
-        "description": "An online grocery store with HTML, CSS, and JavaScript for the frontend, and PHP for backend database management.",
-        "keywords": ["Web development", "UI Design"],
-        "link": "./online-grocery.html"
     },
     {
         "title": "Pomodoro Study Timer",
