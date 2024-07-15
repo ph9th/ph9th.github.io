@@ -14,6 +14,13 @@
         "link": "./colour-clash.html"
     },
     {
+        "title": "Online Grocery Store",
+        "image": "img/lemimart.png",
+        "description": "An online grocery store with HTML, CSS, and JavaScript for the frontend, and PHP for backend database management.",
+        "keywords": ["Web development", "UI Design"],
+        "link": "./online-grocery.html"
+    },
+    {
         "title": "Pomodoro Study Timer",
         "image": "img/pomodoro-mockup.png",
         "description": "A classic pomodoro timer with a task list to keep track of any to-dos.",
