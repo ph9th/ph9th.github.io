@@ -6,10 +6,15 @@
   border-radius: 40px 40px 0px 0px;
   background-color: var(--secondary-color);
   display: grid;
-  grid-template-columns:  1fr 10vw;
-  gap: 10em;
+  grid-template-columns:  1fr 14vw;
+  gap: 8em;
 }
 
+
+
+.project-page .header-img img {
+margin-top: 1.5em;
+}
 
 .project-page .header-img img {
   width: 100%;
@@ -56,6 +61,9 @@
   margin-bottom: 4em;
 }
 
+p, li{
+  max-width: 40em;
+}
 
 
 nav#quick-nav {
