@@ -94,16 +94,21 @@ nav#quick-nav ul li {
 }
 
 .active {
-  color: var(--primary-color) !important;
+  color: var(--accent-color) !important;
+  font-weight: bold;
   opacity: 1 !important;
 }
 
 
 
 section {
-
   width: 100%;
   height: auto;
+}
+
+h3{
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
 .project-page .key-features ul>li>ul>li {
@@ -140,6 +145,25 @@ section {
   margin-top: 2em;
 }
 
+section ol {
+  list-style-type: decimal;
+}
+
+section ul, section ol {
+  margin-left: 2em;
+}
+
+section ul li, section ol li {
+  margin: 0.8em 0;
+}
+
+section ul li {
+  list-style-type: disc;
+}
+
+section ul li span{
+  font-weight: bold;
+}
 
 /* gallery */
 .gallery {
