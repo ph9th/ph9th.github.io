@@ -348,7 +348,9 @@ input:checked + .slider:before {
   right: 8px;
 }
 
-
+.container {
+  padding: 0 6vw;
+}
 
 
 /* --------portfolio--------- */
@@ -534,6 +536,7 @@ nav .fa-solid {
   .container{
     padding: 0 10vw;
   }
+  
   
   .social-icons a{
     font-size: 2em;
