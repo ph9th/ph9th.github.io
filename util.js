@@ -35,7 +35,7 @@ function displayProjects(projects, containerId) {
       observer.observe(project);
       console.log('Observing:', project);
     });
-
-    
   }
+
+
   

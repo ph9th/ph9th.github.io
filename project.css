@@ -1,0 +1,222 @@
+/* Project page */
+
+.project-page .container {
+  width: 100%;
+  padding: 2em 8vw;
+  border-radius: 40px 40px 0px 0px;
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns:  1fr 10vw;
+  gap: 10em;
+}
+
+
+.project-page .header-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.parallax-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-image: url('./img/lemimart/header.png');
+  width: 100%;
+  min-height: 80vh;
+  min-width: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1.5em 0;
+
+  /* min-height: 100vh; */
+  /* background-attachment: fixed;
+
+  background-image: url('./img/lemimart/header.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  color: var(--color);
+  row-gap: 4rem;
+
+  text-align: center; */
+}
+
+.project-page h1 {
+  margin-bottom: 1em;
+}
+
+.project-page h2 {
+  margin-bottom: 0.5em;
+}
+
+.project-page section {
+  margin-bottom: 4em;
+}
+
+
+
+nav#quick-nav {
+  margin-top: 7em;
+  position: sticky;
+  top: 5em;
+  right: 0em;
+  height: 175px;
+  z-index: 100;
+}
+
+nav#quick-nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav#quick-nav ul li a {
+  font-size: 1em;
+  color: var(--accent-color);
+  opacity: 0.6;
+  text-decoration: none;
+  transition: all 0.1s;
+
+}
+
+nav#quick-nav ul li {
+  margin-bottom: 1em;
+}
+
+.active {
+  color: var(--primary-color) !important;
+  opacity: 1 !important;
+}
+
+
+
+section {
+
+  width: 100%;
+  height: auto;
+}
+
+.project-page .key-features ul>li>ul>li {
+  list-style-type: square;
+  margin-left: 1.5em;
+  font-weight: 400;
+}
+
+.project-page .key-features ul>li {
+  font-weight: bold;
+}
+
+.project-page ul {
+  margin-bottom: 1em;
+}
+
+#overview div>a,
+#overview div>a:visited {
+  color: var(--primary-color);
+
+  border: 2px solid var(--accent-color);
+  padding: 0.8em 1.3em;
+  border-radius: 10px;
+
+}
+
+#overview div>a:hover {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+
+}
+
+#overview div {
+  margin-top: 2em;
+}
+
+
+/* gallery */
+.gallery {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  height: 90vh;
+  justify-content: center;
+  margin-top: 5em;
+  grid-template-columns: 20% 80%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+
+.column {
+  padding: 10px;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  max-height: 7em;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  width: 100%;
+  opacity: 0.8;
+  object-fit: cover;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--accent-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.mockupContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#mockupImg {
+  max-height: 95vh;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+

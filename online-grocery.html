@@ -1,174 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thao Tran Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./project.css" />
     <script src="https://kit.fontawesome.com/98fd7ffeba.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Xanh+Mono:ital@0;1&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="toggleTheme.js"></script>
 </head>
+
 <body>
-    <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
-      </div>
     <div class="cursor circle"></div>
-    <div class="wrapper project-page">
-    <nav id="navbar">
-    </nav>
-    <main>
-        <div class="parallax-container">
-            <!-- <img src="./img/lemimart/header.png" alt=""> -->
-        </div>
-        <div class="container">
-        
-        <h1> Lemi Mart – Online Grocery Store</h1>
-        <section class="overview">
-            <h2>Overview</h2>
-            <p>
-                For my university subject "Internet Programming", I developed a dynamic website for <br>  an online grocery store, providing a comprehensive simulated shopping experience.
-            </p>
-               
-            <div>
-                <a href="https://github.com/tran-thao/grocery-online-shop"><i class="fa-brands fa-github"></i> GitHub repository</a>
+    <div class="project-page">
+        <nav id="navbar">
+        </nav>
+        <main>
+            <div class="parallax-container">
+                <!-- <img src="./img/lemimart/header.png" alt=""> -->
             </div>
-            
-        </section>
-        <section>
-            <h2>Toolkit</h2>
-            <p>
-                <ul>
-                    <li>HTML, CSS, JavaScript for the front-end</li>
-                    <li>PHP for server-side scripting and database interactions</li>
-                    <li>AWS Elastic Beanstalk for deployment</li>
-                </ul>
-            </p>
-        </section>
-        <section class="key-features">
-            <h2>Key Features</h2>
-            <p>
-                <ul>
-                    <li>User Interface Design:
-                        <ul>
-                            <li>Designed an intuitive user interface with a custom layout and navigational hierarchy.</li>
-                            <li>Created a consistent website logo appearing on all pages.</li>
-                        </ul>
-                    </li>
-                    <li>Search and Browsing:
-                        <ul>
-                            <li>Implemented a search box for keyword-based item lookup.</li>
-                            <li>Categorized items into sections such as Fruits, Meat, Bakery for easy browsing.</li>
-                            <li>Categories are expandable to view all items within them.</li>
-                        </ul>
-                    </li>
-                    <li>Item Display:
-                        <ul>
-                            <li>Aligned items in a grid view on pages like the homepage, category pages, and search results.</li>
-                            <li>Displayed key information for each item: name, image, unit, price, and stock status.</li>
-                            <li>Added buttons beside each item to add them to the shopping cart.</li>
-                        </ul>
-                    </li>
-                    <li>Shopping Cart:
-                        <ul>
-                            <li>Designed the shopping cart as a designated area.</li>
-                            <li>Made the cart minimized by default, with the option to open it.</li>
-                            <li>Allowed users to view, edit, and remove items from the cart.</li>
-                            <li>Ensured the cart content persisted for a certain period.</li>
-                        </ul>
-                    </li>
-                    <li>Order Placement:
-                        <ul>
-                            <li>Directed users to an order details page for delivery and contact information input.</li>
-                            <li>Ensured all delivery details were compulsory for successful order placement.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </p>
-        </section>
-        <section>
-            <h2>Deployment and Database</h2>
-            <p> <ul>
-                <li>Deployed the website using AWS Elastic Beanstalk.</li>
-                <li> Interacted with the database using PHP, including a SQL file for the "products" table.</li>
-                </ul> 
-            </p>
-        </section>
 
-        <section>
-            <h2>UI Redesign</h2>
-            <p>
-                The initial UI design for the online grocery store, while functional, needed improvements in usability and aesthetics. To address this, I created a new UI design using Figma, focusing on enhancing the user experience and visual appeal. Below are images of the redesigned UI.</p>
-            <div class="gallery">
-    
-                <div class="row">
-                    <div class="column">
-                        <div class="img-container">
-                            <img src="./img/lemimart/Home.png" alt="Home">
-                            <div class="overlay">
-                                <div class="text">Home</div>
+            <div class="container">
+
+
+                <div class="content">
+                    <h1> Lemi Mart – Online Grocery Store</h1>
+                    <section id="overview">
+                        <h2>Overview</h2>
+                        <p>
+                            For my university subject "Internet Programming", I developed a dynamic website for <br> an
+                            online grocery store, providing a comprehensive simulated shopping experience.
+                        </p>
+
+                        <div>
+                            <a href="https://github.com/tran-thao/grocery-online-shop"><i
+                                    class="fa-brands fa-github"></i> GitHub repository</a>
+                        </div>
+
+                    </section>
+                    <section id="toolkit">
+                        <h2>Toolkit</h2>
+                        <p>
+                        <ul>
+                            <li>HTML, CSS, JavaScript for the front-end</li>
+                            <li>PHP for server-side scripting and database interactions</li>
+                            <li>AWS Elastic Beanstalk for deployment</li>
+                        </ul>
+                        </p>
+                    </section>
+                    <section id="key-features" class="key-features">
+                        <h2>Key Features</h2>
+                        <p>
+                        <ul>
+                            <li>User Interface Design:
+                                <ul>
+                                    <li>Designed an intuitive user interface with a custom layout and navigational
+                                        hierarchy.</li>
+                                    <li>Created a consistent website logo appearing on all pages.</li>
+                                </ul>
+                            </li>
+                            <li>Search and Browsing:
+                                <ul>
+                                    <li>Implemented a search box for keyword-based item lookup.</li>
+                                    <li>Categorized items into sections such as Fruits, Meat, Bakery for easy browsing.
+                                    </li>
+                                    <li>Categories are expandable to view all items within them.</li>
+                                </ul>
+                            </li>
+                            <li>Item Display:
+                                <ul>
+                                    <li>Aligned items in a grid view on pages like the homepage, category pages, and
+                                        search results.</li>
+                                    <li>Displayed key information for each item: name, image, unit, price, and stock
+                                        status.</li>
+                                    <li>Added buttons beside each item to add them to the shopping cart.</li>
+                                </ul>
+                            </li>
+                            <li>Shopping Cart:
+                                <ul>
+                                    <li>Designed the shopping cart as a designated area.</li>
+                                    <li>Made the cart minimized by default, with the option to open it.</li>
+                                    <li>Allowed users to view, edit, and remove items from the cart.</li>
+                                    <li>Ensured the cart content persisted for a certain period.</li>
+                                </ul>
+                            </li>
+                            <li>Order Placement:
+                                <ul>
+                                    <li>Directed users to an order details page for delivery and contact information
+                                        input.</li>
+                                    <li>Ensured all delivery details were compulsory for successful order placement.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </p>
+                    </section>
+                    <section id="deployment">
+                        <h2>Deployment and Database</h2>
+                        <p>
+                        <ul>
+                            <li>Deployed the website using AWS Elastic Beanstalk.</li>
+                            <li> Interacted with the database using PHP, including a SQL file for the "products" table.
+                            </li>
+                        </ul>
+                        </p>
+                    </section>
+
+                    <section id="redesign">
+                        <h2>UI Redesign</h2>
+                        <p>
+                            The initial UI design for the online grocery store, while functional, needed improvements in
+                            usability and aesthetics. To address this, I created a new UI design using Figma, focusing
+                            on enhancing the user experience and visual appeal. Below are images of the redesigned UI.
+                        </p>
+                        <div class="gallery">
+
+                            <div class="row">
+                                <div class="column">
+                                    <div class="img-container">
+                                        <img src="./img/lemimart/Home.png" alt="Home">
+                                        <div class="overlay">
+                                            <div class="text">Home</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="img-container">
+                                        <img src="./img/lemimart/Browsing.png" alt="Browsing">
+                                        <div class="overlay">
+                                            <div class="text">Browsing</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="img-container">
+                                        <img src="./img/lemimart/Cart.png" alt="Cart">
+                                        <div class="overlay">
+                                            <div class="text">Cart</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="img-container">
+                                        <img src="./img/lemimart/OrderDetails.png" alt="Order Details">
+                                        <div class="overlay">
+                                            <div class="text">Order Details</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="img-container">
+                                        <img src="./img/lemimart/OrderPlaced.png" alt="Order Completed">
+                                        <div class="overlay">
+                                            <div class="text">Order Placed</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mockupContainer">
+                                <img id="mockupImg" src="./img/lemimart/Home.png">
                             </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="img-container">
-                            <img src="./img/lemimart/Browsing.png" alt="Browsing">
-                            <div class="overlay">
-                                <div class="text">Browsing</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="img-container">
-                            <img src="./img/lemimart/Cart.png" alt="Cart">
-                            <div class="overlay">
-                                <div class="text">Cart</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="img-container">
-                            <img src="./img/lemimart/OrderDetails.png" alt="Order Details">
-                            <div class="overlay">
-                                <div class="text">Order Details</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="img-container">
-                            <img src="./img/lemimart/OrderPlaced.png" alt="Order Completed">
-                            <div class="overlay">
-                                <div class="text">Order Placed</div>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
+
+
                 </div>
-                
-                <div class="mockupContainer">
-                    <img id="mockupImg" src="./img/lemimart/Home.png">
-                </div>
+                <nav id="quick-nav">
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#toolkit">Toolkit</a></li>
+                        <li><a href="#key-features">Key features</a></li>
+                        <li><a href="#deployment">Deployment</a></li>
+                        <li><a href="#redesign">Redesign</a></li>
+                    </ul>
+                </nav>
+
             </div>
-        </section>
-        
-        
+
+        </main>
+
+
+        <footer id="footer">
+
+        </footer>
     </div>
-    <div class="parallax"></div>
-    </main>
-    
-
-    <footer id="footer">
-        
-    </footer>
-</div>
-<script src="cursor.js"></script>
-<script src="online-grocery.js"></script>
-<script src="util.js"></script>
+    <script src="cursor.js"></script>
+    <script src="online-grocery.js"></script>
+    <script src="quick-nav.js"></script>
+    <script src="util.js"></script>
 </body>
+
 </html>
-
-

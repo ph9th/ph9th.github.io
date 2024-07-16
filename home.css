@@ -1,0 +1,135 @@
+/* Header */
+
+header h1 {
+    font-family: var(--font-primary);
+    font-weight: bold;
+    font-size: 4.236rem;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+  }
+  
+  header, .container {
+    padding: 2vh 6vw;
+    scroll-snap-align: start;
+  }
+  
+  header, main{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+  
+  .typewriter .tw-cursor {
+    display: inline-block;
+    border-right: 10px solid var(--accent-color);
+    animation: blink 0.7s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s steps(30, end) infinite, blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .background{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-10px);
+  }
+  
+  /* .layer2 {
+    transform: translateZ(-100px) translateY(400px);
+  } */
+
+  /* ------- main ------- */
+
+  .wrapper {
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+    perspective: 10px;
+    height: 100vh;
+    scroll-behavior: smooth;
+  }
+
+main .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-10px);
+    opacity: 0.2;
+  }
+  
+  main .layer1 {
+    right: 20vw;
+    transform: translateX(75vw) translateY(-80vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+  } 
+  
+  .main .layer1 .cls-1 {
+    stroke-width: 20px;
+  }
+  
+  main .layer2 {
+    transform: translateX(-50vw) translateY(20vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+  }
+  
+  main .layer3 {
+    right: 20vw;
+    transform: translateX(75vw) translateY(90vh) translateZ(-5px) rotate(90deg) scale(0.5);
+  }
+  
+  main .layer4 {
+    transform: translateX(-200vw) translateY(0vh) translateZ(-5px) rotate(-30deg) scale(0.2);
+  }
+
+  /* Media queries */
+
+  @media only screen and (max-width: 1200px) {
+
+    main .layer1 {
+      transform: translateX(75vw) translateY(-60vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+  }
+  
+    main .layer2 {
+      transform: translateX(-50vw) translateY(-10vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+  }
+  
+  main .layer3 {
+    transform: translateX(75vw) translateY(50vh) translateZ(-5px) rotate(90deg) scale(0.5);
+  }
+    
+  }
+
+  @media only screen and (max-width: 768px) {
+  
+    main .layer1{
+  
+    }
+  
+    main .layer2 {
+      transform: translateX(-50vw) translateY(-30vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+  }
+  
+    main .layer3{
+  
+    }
+  }
