@@ -404,6 +404,26 @@ input:checked + .slider:before {
   margin-bottom: 1em;
 }
 
+ .project-description h3>a, .project-description h3>a:visited  {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.project-description h3>a::before {
+  position: absolute;
+  content: attr(data-content);
+  color: var(--accent-color);
+  overflow: hidden;
+  transition: width 275ms ease;
+  width: 0;
+  white-space: nowrap;
+  mix-blend-mode: multiply;
+}
+
+.project-description h3>a:hover::before{
+    width: 100%;
+}
+
 .project-description p {
   font-size: 1.1rem;
   margin-bottom: 1em;

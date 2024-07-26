@@ -10,7 +10,7 @@ function displayProjects(projects, containerId) {
           <a href="${project.link}"><img src="${project.image}" /></a>
         </div>
         <div class="project-description">
-          <h3>${project.title}</h3>
+          <h3><a href="${project.link}" data-content="${project.title}">${project.title}</a></h3>
           <p>${project.description}</p>
           <ul class="keywords">
             ${project.keywords.map(keyword => `<li>${keyword}</li>`).join('')}
@@ -23,7 +23,7 @@ function displayProjects(projects, containerId) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          console.log('Element intersecting:', entry.target); 
+          // console.log('Element intersecting:', entry.target); 
           entry.target.classList.add('visible');
         }
       });
@@ -33,7 +33,7 @@ function displayProjects(projects, containerId) {
     const projectElements = document.querySelectorAll('.project');
     projectElements.forEach(project => {
       observer.observe(project);
-      console.log('Observing:', project);
+      // console.log('Observing:', project);
     });
   }
 
