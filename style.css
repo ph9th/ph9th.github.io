@@ -452,11 +452,29 @@ input:checked + .slider:before {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 0.6s ease;
+  transition: all 1s ease;
 }
 
 .fade-in.visible {
   opacity: 1;
+}
+
+.slide-right {
+  transform: translateX(-15%);
+  transition: all 1s ease;
+}
+
+.visible>.slide-right {
+  transform: translateX(0);
+}
+
+.slide-left {
+  transform: translateX(+15%);
+  transition: all 1s ease;
+}
+
+.visible>.slide-left {
+  transform: translateX(0);
 }
 
 

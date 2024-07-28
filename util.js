@@ -6,10 +6,10 @@ function displayProjects(projects, containerId) {
       projectElement.classList.add('fade-in');
   
       projectElement.innerHTML = `
-        <div class="project-img">
+        <div class="project-img slide-right">
           <a href="${project.link}"><img src="${project.image}" /></a>
         </div>
-        <div class="project-description">
+        <div class="project-description slide-left">
           <h3><a href="${project.link}" data-content="${project.title}">${project.title}</a></h3>
           <p>${project.description}</p>
           <ul class="keywords">

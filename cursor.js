@@ -13,6 +13,10 @@ const moveCursor = (e) => {
     'a, button, [role="button"], input[type="submit"], input[type="button"], .switch, .img-container'
   );
 
+  const isHeader = e.target.closest(
+    '.header'
+  );
+
   if (isInteractiveElement) {
     document.documentElement.classList.add(HIDE_CURSOR_CLASS);
     cursor.classList.add("triangle");
