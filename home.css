@@ -68,20 +68,19 @@ main .background {
 
 main .layer1 {
   right: 20vw;
-  transform: translateX(75vw) translateY(-80vh) translateZ(-5px) rotate(-30deg) scale(0.5);
-}
-
-.main .layer1 .cls-1 {
-  stroke-width: 20px;
+  transform: translateX(75vw) translateY(-80vh) translateZ(-5px) rotate(-30deg) scale(0.6);
+  fill: var(--beige);
 }
 
 main .layer2 {
-  transform: translateX(-50vw) translateY(20vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+  transform: translateX(-50vw) translateY(20vh) translateZ(-5px) rotate(-30deg) scale(0.6);
+  fill: var(--beige);
 }
 
 main .layer3 {
   right: 20vw;
-  transform: translateX(75vw) translateY(90vh) translateZ(-5px) rotate(90deg) scale(0.5);
+  transform: translateX(75vw) translateY(90vh) translateZ(-5px) rotate(0deg) scale(0.5);
+  fill: var(--beige);
 }
 
 main .layer4 {
@@ -93,26 +92,30 @@ main .layer4 {
 @media only screen and (max-width: 1200px) {
 
   main .layer1 {
-    transform: translateX(75vw) translateY(-60vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+    transform: translateX(75vw) translateY(-80vh) translateZ(-5px) rotate(-30deg) scale(0.7);
   }
 
   main .layer2 {
-    transform: translateX(-50vw) translateY(-10vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+    transform: translateX(-50vw) translateY(0vh) translateZ(-5px) rotate(-30deg) scale(0.7);
   }
 
   main .layer3 {
-    transform: translateX(75vw) translateY(50vh) translateZ(-5px) rotate(90deg) scale(0.5);
+    transform: translateX(75vw) translateY(50vh) translateZ(-5px) rotate(0deg) scale(0.7);
   }
 
 }
 
 @media only screen and (max-width: 768px) {
 
-  main .layer1 {}
-
-  main .layer2 {
-    transform: translateX(-50vw) translateY(-30vh) translateZ(-5px) rotate(-30deg) scale(0.5);
+  main .layer1 {
+    transform: translateX(75vw) translateY(-100vh) translateZ(-5px) rotate(-30deg) scale(1);
   }
 
-  main .layer3 {}
+  main .layer2 {
+    transform: translateX(-50vw) translateY(-10vh) translateZ(-5px) rotate(-30deg) scale(1);
+  }
+
+  main .layer3 {
+    transform: translateX(75vw) translateY(50vh) translateZ(-5px) rotate(0deg) scale(1);
+  }
 }
