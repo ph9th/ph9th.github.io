@@ -112,7 +112,7 @@ html, body {
 
 [data-theme="light"] {
   --primary-color: #081F5C; /* Deep Blue */
-  --secondary-color: #F7F2EB; /* Light Beige */
+  --secondary-color: white; /* Light Beige #F7F2EB */
   --accent-color: #2242b3; /* Soft Blue */
   --blue: #0f3351;
   --beige: #e3dbd1;
@@ -126,7 +126,7 @@ html, body {
 }
 
 [data-theme="dark"] {
-  --primary-color: #F7F2EC; /* Deep Blue */
+  --primary-color: white; /* Deep Blue */
   --secondary-color: #05133a; /* Light Beige */
   --accent-color: #D0E4FF ; /* Soft Blue */ 
   --blue: #0f3351;

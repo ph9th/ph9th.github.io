@@ -22,34 +22,14 @@ main {
   z-index: -1;
 }
 
-.typewriter .tw-cursor {
-  display: inline-block;
-  border-right: 10px solid var(--accent-color);
-  animation: blink 0.7s steps(1) infinite;
+.typewriter {
+  border-left: .05em solid var(--accent-color);
+  animation: blink-caret 1s steps(1) infinite;
 }
 
-@keyframes blink {
+@keyframes blink-caret {
   50% {
     border-color: transparent;
-  }
-}
-
-.typewriter {
-  display: inline-block;
-  overflow: hidden;
-  border-right: .15em solid black;
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 2s steps(30, end) infinite, blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
   }
 }
 

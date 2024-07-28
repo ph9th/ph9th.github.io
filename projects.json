@@ -21,18 +21,18 @@
         "link": "https://thaophu.itch.io/witching-senses"
     },
     {
-        "title": "Pomodoro Study Timer",
-        "image": "img/pomodoro-mockup.png",
-        "description": "A classic pomodoro timer with a task list to keep track of any to-dos.",
-        "keywords": ["HTML", "CSS", "JavaScript"],
-        "link": "https://tran-thao.github.io/Pomodoro-Timer/"
-    },
-    {
         "title": "ColorMemo",
         "image": "img/colormemo-mockup.png",
         "description": "A mobile game that aims to improve children's visual memory in combination with a tangible user interface.",
         "keywords": [ "Game Design", "Unity", "C#"],
         "link": "https://github.com/tran-thao/colormemo"
+    },
+    {
+        "title": "Pomodoro Study Timer",
+        "image": "img/pomodoro-mockup.png",
+        "description": "A classic pomodoro timer with a task list to keep track of any to-dos.",
+        "keywords": ["HTML", "CSS", "JavaScript"],
+        "link": "https://tran-thao.github.io/Pomodoro-Timer/"
     },
     {
         "title": "Stuck",

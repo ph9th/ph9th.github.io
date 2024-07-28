@@ -8,35 +8,35 @@ document.addEventListener('DOMContentLoaded', function() {
       const pauseDuration = 2000; 
       const greetingElement = document.querySelector(".greeting");
       
-      function typeWriter(text, index, callback) {
-        if (index < text.length) {
-          greetingElement.innerHTML = text.substring(0, index + 1) + '<span class="tw-cursor">&nbsp;</span>';
-          setTimeout(() => typeWriter(text, index + 1, callback), typingSpeed);
-        } else if (typeof callback === "function") {
-          setTimeout(callback, pauseDuration);
+      function animateText(text, index, isTyping, callback) {
+        if (isTyping) {
+          if (index < text.length) {
+            greetingElement.innerHTML = text.substring(0, index + 1) + '<span class="typewriter">&nbsp;</span>';
+            setTimeout(() => animateText(text, index + 1, true, callback), typingSpeed);
+          } else {
+            setTimeout(callback, pauseDuration);
+          }
+        } else {
+          if (index >= 0) {
+            greetingElement.innerHTML = text.substring(0, index) + '<span class="typewriter">&nbsp;</span>';
+            setTimeout(() => animateText(text, index - 1, false, callback), backspaceSpeed);
+          } else {
+            callback();
+          }
         }
       }
-
-      function deleteText(text, index, callback) {
-        if (index >= 0) {
-          greetingElement.innerHTML = text.substring(0, index) + '<span class="tw-cursor">&nbsp;</span>';
-          setTimeout(() => deleteText(text, index - 1, callback), backspaceSpeed);
-        } else if (typeof callback === "function") {
-          callback();
-        }
-      }
-
+      
       function loopGreetings() {
-        typeWriter(greetings[greetingIndex], 0, function() {
-          setTimeout(function() {
-            deleteText(greetings[greetingIndex], greetings[greetingIndex].length, function() {
+        animateText(greetings[greetingIndex], 0, true, () => {
+          setTimeout(() => {
+            animateText(greetings[greetingIndex], greetings[greetingIndex].length, false, () => {
               greetingIndex = (greetingIndex + 1) % greetings.length;
               loopGreetings();
             });
           }, pauseDuration);
         });
       }
-
+      
       loopGreetings();
 
       const container = document.getElementById('header');
